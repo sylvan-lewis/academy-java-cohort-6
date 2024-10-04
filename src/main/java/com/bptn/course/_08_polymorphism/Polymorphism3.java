@@ -22,13 +22,13 @@ public class Polymorphism3 {
 	public static void main(String[] args) {
 		
 		Polymorphism3 p1 = new Polymorphism3();
-		p1.print(5);
+		p1.print(40);
 		
-		p1.print("Hello World");
+		p1.print("Happy Friday!");
 		
-		System.out.println("Sum of two integers: " + p1.print(2,3));
+		System.out.println("Sum of two integers: " + p1.print(20,20));
 		
-		System.out.println("Sum of two doubles: " + p1.print(2.0,3.0));
+		System.out.println("Sum of two doubles: " + p1.print(19.99,20.01));
 	}
 
 }
