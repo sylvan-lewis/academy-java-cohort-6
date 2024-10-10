@@ -48,45 +48,59 @@ class Student {
 
     /* Implement getters and setters */
     public long getStudentId() {
+    	return studentId;
     }
 
     public void setStudentId(long studentId) {
+    	this.studentId = studentId;
     }
 
     public String getUserName() {
+    	return userName;
     }
 
     public void setUserName(String userName) {
+    	this.userName = userName;
     }
 
     public String getPassword() {
+    	return password;
     }
 
     public void setPassword(String password) {
+    	this.password = password;
     }
 
     public String getFirstName() {
+    	return firstName;
     }
 
     public void setFirstName(String firstName) {
+    	this.firstName = firstName;
     }
 
     public String getLastName() {
+    	return lastName;
     }
 
     public void setLastName(String lastName) {
+    	this.lastName = lastName;
     }
 
     public String getEmail() {
+    	return email;
     }
 
     public void setEmail(String email) {
+    	this.email = email;
     }
 
     public String getPhone() {
+    	return phone;
     }
 
     public void setPhone(String phone) {
+    	this.phone = phone;
     }
 
     public String getAddress() {
@@ -106,9 +120,11 @@ class Student {
     }
 
     public Date getBirthdate() {
+    	return birthdate;
     }
 
     public void setBirthdate(Date birthdate) {
+    	this.birthdate = birthdate;
     }
 
     public Date getAdmissionDate() {
@@ -120,9 +136,11 @@ class Student {
     }
 
     public long getRollNumber() {
+    	return rollNumber;
     }
 
     public void setRollNumber(long rollNumber) {
+    	this.rollNumber = rollNumber;
     }
 
     public String getCurriculumName() {
@@ -130,14 +148,18 @@ class Student {
     }
 
     public void setCurriculumName(String curriculumName) {
+    	this.curriculumName = curriculumName;
     }
     /* ------end section of getters and setters----------*/
 
-    public void editStudent(List<Student> universityStudents, Student student) {
+    //public void editStudent(List<Student> universityStudents, Student student) {
        // Given a list of students, find by id a student that matches the id of the given student and replace it with the given student.
 
-       // CAN THIS BE REFACTORED? Think about it and give some comments here. Could this method be better placed in a different class? Maybe yes, maybe not. Why?
-    }
+       
+    	// CAN THIS BE REFACTORED? Think about it and give some comments here. Could this method be better placed in a different class? Maybe yes, maybe not. Why?
+    // This does make more sense in the university class, so it can directly modify a student list associated with a university
+    // the edit student method will be refactored in the uni class. 
+    //}
 
      public String toString() {
         return "\nStudent: \n" +
