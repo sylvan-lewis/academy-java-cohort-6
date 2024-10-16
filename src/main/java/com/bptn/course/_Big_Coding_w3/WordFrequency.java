@@ -8,20 +8,20 @@ public class WordFrequency {
         String sentence = "This is a test sentence with no repeating words";
 
         // Split the sentence into words using split() method
-        String[] words = sentence.split("words");
+         String[] words = sentence.split(" ");
 
         // Create a Map to store the frequency of each word
         Map<String, Integer> wordFrequency = new HashMap<>();
 
         // Iterate through each word in the sentence
-        for () {
+        for (String word : words) {
             // If the word is already in the map, increment its frequency 
-            if () {
-                
+            if (wordFrequency.containsKey(word)) {
+                wordFrequency.put(word, wordFrequency.get(word) + 1);
             }
             // If the word is not in the map, add it with a frequency of 1
             else {
-               
+               wordFrequency.put(word, 1);
             }
         }
 
